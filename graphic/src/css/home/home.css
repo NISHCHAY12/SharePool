@@ -1,0 +1,231 @@
+body{
+    background-color: #ffffff;
+}
+
+#bg-img{
+    background-image: url("../../images/home/back.jpg");
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.txt-bg{
+    color: #00DFA2;
+    margin-top: -90vh;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px black;
+}
+
+.txt-bg h2{
+    margin-bottom: -6vh;
+}
+
+.place{
+    width: 100%;
+    margin-top: 60vh;
+}
+
+/* ----------------------------------------------------------------- */
+
+.hor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 18vw;
+    height: 6vh;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 1px #00000033;
+    padding: 1vh;
+}
+
+#block1{
+    border-top-left-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+}
+
+#search{
+    width: 8vw;
+    height: 8vh;
+    border-top-right-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    border: none;
+    background-color: #00DFA2;
+    box-shadow: 5px 0px 10px 1px #00000033;
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.diff{
+    height: 8vh;
+    width: 2px;
+    background-color: #00DFA2;
+}
+
+.icon-box{
+    font-size: 4vh;
+    margin-top: 1vh;
+    margin-inline: 1vh;
+    color: #00DFA2;
+}
+
+.input_txt{
+    position: absolute;
+    margin-top: 1.5vh;
+    font-size: 2.5vh;
+    width: 12vw;
+    background: none;
+    border: none;
+    color: #00a77a;
+}
+
+.input_txt::placeholder{
+    color: #00a77a;
+}
+
+.input_txt:focus{
+    border: none;
+    outline: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.pros{
+    margin-top: 20vh;
+    padding-inline: 10vw;
+    text-align: center;
+    display: flex;
+}
+
+.pros-sym{
+    color: #00DFA2;
+    font-size: 1.8rem;
+}
+
+.pros-cont{
+    height: 30vh;
+    margin-inline: 0.84vw;
+    width: 25vw;
+}
+
+.safe{
+    margin-block: 10vh;
+    background-color: #00DFA2;
+    height: 40vh;
+    display: flex;
+    padding-inline: 10vw;
+}
+
+#safe-img{
+    scale: 1;
+}
+
+#safe-txt{
+    padding-block: 10vh;
+}
+
+.safe h3,.safe p{
+    color: #ffffff;
+}
+
+.help{
+    background-color: #00DFA2;
+    text-align: center;
+    padding-block: 10vh;
+    padding-inline: 9vw;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+
+.help h2{
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.help-box{
+    margin-block: 3vh;
+    margin-inline: 3vw;
+    width: 35vw;
+    height: 47vh;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.help-txt{
+    padding: 5vh;
+    margin-top: -40vh;
+}
+
+.conf-img{
+    scale: 0.9;
+    top: -25vh;
+    position:relative;
+    margin-top: -50vh;
+    left: 25vw;
+}
+
+.help-dia{
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.help-img{
+    height: 47vh;
+    width: 35vw;
+}
+
+#help-but{
+    background: none;
+    color: white;
+    padding: 3vh;
+    font-size: 1.3rem;
+    border: 1px dashed white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#help-but:hover{
+    background: white;
+    color: #00DFA2;
+    border-radius: 5vw;
+    transform: skew(5deg);
+}
+
+.working{
+    margin-inline: 6vw;
+    text-align: center;
+    color: #008864;
+}
+
+.work-box{
+    width: 20vw;
+    margin-inline: 1vw;
+    margin-top: 5vh;
+}
+
+.ic-work{
+    font-size: 1.7rem;
+}

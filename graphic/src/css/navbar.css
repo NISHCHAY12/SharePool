@@ -1,0 +1,121 @@
+.nav-bar{
+    padding-inline: 10%;
+    background-color: #f3fff6;
+    height: 12vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00DFA2;
+    border-bottom: 2px solid #00DFA2;
+    position:fixed;
+    z-index: 10;
+}
+
+#logo-img{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.log-o{
+    scale: 0.5;
+}
+
+#links , ul{
+    display: flex;
+    list-style: none;
+}
+
+#links li{
+    margin-right: 2.5vw;
+    text-decoration: none;
+    margin-top: 2vh;
+    cursor: pointer;
+    font-size: 1.1rem;
+    
+}
+
+#links a{ 
+    display: flex;
+    text-decoration: none;
+    color: #00DFA2;
+}
+
+.nav-icon{
+    font-size: 1.6rem;
+    margin-top: 1.5vh;
+    margin-right: 0.4vw;
+    cursor: pointer;
+}
+
+.user{
+    height: 12vh;
+    display: flex;
+    width: 6vw;
+    margin-left: 3vw;
+    justify-content:center;
+    align-items: center;
+}
+
+.user:hover > .us , .us:hover{
+    animation: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.user:hover + .drop-down , .drop-down:hover{
+    scale: 1;
+}
+ 
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(120deg);
+    }
+    66%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.drop-down{
+    scale: 0;
+    background-color: #00DFA2;
+    margin-left: 3%;
+    max-height: 25vh;
+    padding: 1.5vh;
+    min-width: 10vw;
+    max-width: 20vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #00DFA2;
+    z-index: -1;
+}
+
+.drop-down a{
+    color: white !important;
+    text-decoration: none;
+    margin-block: 0.8vh;
+    padding-left: 1vw;
+}
+
+.drop-down a:hover{
+    color: #006f41;
+}
+
+.user-img{
+    border-radius: 5vw;
+    height: 3vw;
+    width: 3vw;
+    margin-right: 0.5vw;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.033);
+}

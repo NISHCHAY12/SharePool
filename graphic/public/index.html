@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Sharepool</title>
+
+    <style media="screen" type="text/css">
+      #layer1 { position: fixed; z-index: 1; visibility: visible;width: 100vw;height: 100vh; display: flex; justify-content: center;align-items: center;}
+      #layer2 { z-index: 2; visibility: hidden }
+    </style>
+    <script>
+      function downLoad(){
+        if (document.all){
+            document.all["layer1"].style.visibility="hidden";
+            document.all["layer2"].style.visibility="visible";
+        } else if (document.getElementById("layer2")){
+          console.log("hi")
+        setTimeout(() => {
+            node = document.getElementById("layer1").style.scale='0';
+            node = document.getElementById("layer2").style.visibility='visible';
+            node = document.getElementById("layer1").style.visibility='hidden';
+        },50);
+        }
+      }
+    </script>
+
+  </head>
+  <body onload="downLoad()">
+    <div id="layer1"><img src="https://media2.giphy.com/media/LESpNIDaNBUcRIPzng/giphy.gif?cid=ecf05e478u6tbtvy7mj7ipnmnymty5i7tunveggp1x1qbsr8&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="100px" height="100px" alt="loading..."><P>Loading..</P></div>
+    <div id="layer2">
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+    </div>
+  </body>
+</html>
